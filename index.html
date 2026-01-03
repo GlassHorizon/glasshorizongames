@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask & Fury | Glass Horizon</title>
+    <meta name="description" content="A survivor-like roguelite where you brew your own build. Craft potions, mutate enemies, and survive the endless woods.">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Flask & Fury">
+    <meta property="og:description" content="Don't just find your build. Brew it. Coming 2026.">
+    <meta property="og:image" content="assets/hero_bg.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <img src="assets/logo.png" alt="Flask & Fury Logo" class="nav-logo">
+            <div class="nav-links">
+                <a href="https://store.steampowered.com/app/4284950/Flask__Fury/" target="_blank" class="nav-btn steam-btn">Wishlist on Steam</a>
+                <button id="theme-toggle" class="theme-btn">
+                    <img src="assets/icon_sun.png" id="theme-icon" alt="Toggle Theme">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img src="assets/logo.png" alt="Flask & Fury" class="hero-logo">
+            <h1 class="tagline">Brew Your Own Bullet Hell</h1>
+            <div class="cta-container">
+                <!-- Steam Widget -->
+                <iframe src="https://store.steampowered.com/widget/4284950/" frameborder="0" width="646" height="190"></iframe>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Grid -->
+    <section class="features">
+        <div class="container">
+            <h2>The Alchemist's Path</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="assets/feature_combat.gif" alt="Combat">
+                    <h3>Physics Combat</h3>
+                    <p>Hurl flasks that shatter, explode, and combine with the environment. Every throw matters.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/feature_crafting.gif" alt="Crafting">
+                    <h3>Tactile Crafting</h3>
+                    <p>Synthesize ingredients and brew potions mid-combat using your field kit. You are the factory.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/feature_meta.gif" alt="Progression">
+                    <h3>Rebuild & Unlock</h3>
+                    <p>Restore the Metropolis. Unlock permanent stats, logic slots, and automated helpers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="screenshot-grid">
+                <img src="assets/screen_1.jpg" alt="Gameplay Screenshot" onclick="window.open(this.src)">
+                <img src="assets/screen_2.jpg" alt="Gameplay Screenshot" onclick="window.open(this.src)">
+                <img src="assets/screen_3.jpg" alt="Gameplay Screenshot" onclick="window.open(this.src)">
+                <img src="assets/screen_4.jpg" alt="Gameplay Screenshot" onclick="window.open(this.src)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <img src="assets/favicon.png" alt="Glass Horizon" class="footer-logo">
+                <p>&copy; 2026 Glass Horizon.</p>
+                <a href="mailto:contact@glasshorizongames.com">contact@glasshorizongames.com</a>
+            </div>
+            <div class="footer-right">
+                <a href="assets/presskit.zip" class="press-link">Download Press Kit</a>
+                <div class="socials">
+                    <a href="https://x.com/GlassHorizonDev" target="_blank">X / Twitter</a>
+                    <!-- Add Discord/YouTube here later -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
